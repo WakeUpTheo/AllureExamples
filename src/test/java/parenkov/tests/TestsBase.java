@@ -18,32 +18,32 @@ import parenkov.helpers.DriverUtils;
 
 import java.io.InputStream;
 
-@ExtendWith({AllureJunit5.class})
+//@ExtendWith({AllureJunit5.class})
 public class TestsBase {
 
     @BeforeAll
     static void testConfiguration() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        DriverSettings.configure();
+//        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+//        DriverSettings.configure();
 
         RestAssured.baseURI = App.config.apiUrl();
         Configuration.baseUrl = App.config.webUrl();
     }
 
-    @AfterEach
-    public void addAttachments() {
-        String sessionId = DriverUtils.getSessionId();
-
-        AllureAttachments.addScreenshotAs("Last screenshot");
-        AllureAttachments.addPageSource();
-        AllureAttachments.addBrowserConsoleLogs();
-
-        Selenide.closeWebDriver();
-
-        if (Project.isVideoOn()) {
-            AllureAttachments.addVideo(sessionId);
-        }
-    }
+//    @AfterEach
+//    public void addAttachments() {
+//        String sessionId = DriverUtils.getSessionId();
+//
+//        AllureAttachments.addScreenshotAs("Last screenshot");
+//        AllureAttachments.addPageSource();
+//        AllureAttachments.addBrowserConsoleLogs();
+//
+//        Selenide.closeWebDriver();
+//
+//        if (Project.isVideoOn()) {
+//            AllureAttachments.addVideo(sessionId);
+//        }
+//    }
 
     public String request(int sheet, int row, int cell) throws Exception {
         try (InputStream stream = getClass().getClassLoader().getResourceAsStream("request.xlsx")) {
