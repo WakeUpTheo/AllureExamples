@@ -1,11 +1,12 @@
 package parenkov.tests;
 
-import io.qameta.allure.Story;
+import io.qameta.allure.Epic;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -13,7 +14,8 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static parenkov.tests.Specs.baseRequest;
 
-@Story("Demo Web Shop")
+@Tag("API")
+@Epic("Demo Web Shop")
 @Owner("Fedor Parenkov")
 public class APITests extends TestsBase {
 
