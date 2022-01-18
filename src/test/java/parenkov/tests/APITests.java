@@ -33,7 +33,7 @@ public class APITests extends APITestsBase {
                     .post("/register")
                     .then()
                     .statusCode(302)
-                    .log().all();
+                    .log().body();
         });
     }
 
@@ -53,7 +53,7 @@ public class APITests extends APITestsBase {
                     .post("/addproducttocart/details/74/1")
                     .then()
                     .statusCode(200)
-                    .log().all()
+                    .log().body()
                     .body("success", is(true))
                     .body("message", is("The product has been added to your " +
                             "<a href=\"/cart\">shopping cart</a>"));
@@ -76,7 +76,7 @@ public class APITests extends APITestsBase {
                     .post("/contactus")
                     .then()
                     .statusCode(200)
-                    .log().all();
+                    .log().body();
         });
     }
 }
