@@ -93,7 +93,7 @@ public class UITests extends UITestsBase {
                             .contentType("application/x-www-form-urlencoded; charset=UTF-8")
                             .body("addtocart_13.EnteredQuantity=3")
                             .when()
-                            .post("http://demowebshop.tricentis.com/addproducttocart/details/13/1")
+                            .post("/addproducttocart/details/13/1")
                             .then()
                             .statusCode(200)
                             .extract()
