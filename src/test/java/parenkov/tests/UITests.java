@@ -84,7 +84,7 @@ public class UITests extends TestsBase {
 
     @Test
     @Feature("Shopping cart")
-    @DisplayName("Removing a product from the shopping cart via API and UI")
+    @DisplayName("Removing a product from the shopping cart [via API and UI]")
     @Severity(SeverityLevel.CRITICAL)
     void deletingAnItemFromTheShoppingCart() {
         step("Add a product to the shopping cart by API and set cookies", () -> {

@@ -21,7 +21,7 @@ public class APITests extends TestsBase {
 
     @Test
     @Feature("Registration")
-    @DisplayName("User registration via API")
+    @DisplayName("User registration")
     @Severity(SeverityLevel.CRITICAL)
     void userRegistration() throws Exception {
         String body = request(0, 1, 1);
@@ -39,7 +39,7 @@ public class APITests extends TestsBase {
 
     @Test
     @Feature("Shopping Cart")
-    @DisplayName("Adding an item to the Shopping Cart via API")
+    @DisplayName("Adding an item to the Shopping Cart")
     @Severity(SeverityLevel.CRITICAL)
     void addingAnItemToTheShoppingCart() throws Exception {
         String body = request(0, 2, 1);
@@ -62,7 +62,7 @@ public class APITests extends TestsBase {
 
     @Test
     @Feature("Feedback")
-    @DisplayName("Sending feedback by 'Contact Us' form via API")
+    @DisplayName("Sending feedback by 'Contact Us'")
     @Severity(SeverityLevel.MINOR)
     void sendingFeedback() throws Exception {
         String body = request(0, 3, 1);
