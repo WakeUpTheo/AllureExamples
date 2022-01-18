@@ -3,9 +3,7 @@ package parenkov.tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.codeborne.xlstest.XLS;
 import io.qameta.allure.selenide.AllureSelenide;
-import io.restassured.RestAssured;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import parenkov.config.App;
@@ -14,16 +12,13 @@ import parenkov.helpers.AllureAttachments;
 import parenkov.helpers.DriverSettings;
 import parenkov.helpers.DriverUtils;
 
-import java.io.InputStream;
-
-public class TestsBase {
+public class UITestsBase {
 
     @BeforeAll
     static void testConfiguration() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DriverSettings.configure();
 
-        RestAssured.baseURI = App.config.apiUrl();
         Configuration.baseUrl = App.config.webUrl();
     }
 
@@ -39,14 +34,6 @@ public class TestsBase {
 
         if (Project.isVideoOn()) {
             AllureAttachments.addVideo(sessionId);
-        }
-    }
-
-    public String request(int sheet, int row, int cell) throws Exception {
-        try (InputStream stream = getClass().getClassLoader().getResourceAsStream("request.xlsx")) {
-            XLS parsed = new XLS(stream);
-            String body = parsed.excel.getSheetAt(sheet).getRow(row).getCell(cell).getStringCellValue();
-            return body;
         }
     }
 }

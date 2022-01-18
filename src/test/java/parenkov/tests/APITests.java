@@ -17,7 +17,7 @@ import static parenkov.tests.Specs.baseRequest;
 @Tag("API")
 @Epic("Demo Web Shop")
 @Owner("Fedor Parenkov")
-public class APITests extends TestsBase {
+public class APITests extends APITestsBase {
 
     @Test
     @Feature("Registration")

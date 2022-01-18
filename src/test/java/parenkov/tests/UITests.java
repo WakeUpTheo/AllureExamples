@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Tag("UI")
 @Epic("Demo Web Shop")
 @Owner("Fedor Parenkov")
-public class UITests extends TestsBase {
+public class UITests extends UITestsBase {
 
     @Test
     @Feature("Main page")
