@@ -1,10 +1,6 @@
 package parenkov.tests;
 
-import io.qameta.allure.Epic;
-import io.qameta.allure.Owner;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -20,6 +16,7 @@ import static parenkov.tests.Specs.baseRequest;
 public class APITests extends APITestsBase {
 
     @Test
+    @AllureId("6712")
     @Feature("Registration")
     @DisplayName("User registration")
     @Severity(SeverityLevel.CRITICAL)
@@ -37,6 +34,7 @@ public class APITests extends APITestsBase {
     }
 
     @Test
+    @AllureId("6714")
     @Feature("Shopping Cart")
     @DisplayName("Adding an item to the Shopping Cart")
     @Severity(SeverityLevel.CRITICAL)
@@ -59,6 +57,7 @@ public class APITests extends APITestsBase {
     }
 
     @Test
+    @AllureId("6713")
     @Feature("Feedback")
     @DisplayName("Sending feedback by 'Contact Us'")
     @Severity(SeverityLevel.MINOR)

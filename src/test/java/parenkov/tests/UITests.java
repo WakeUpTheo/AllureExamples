@@ -22,6 +22,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class UITests extends UITestsBase {
 
     @Test
+    @AllureId("6711")
     @Feature("Main page")
     @DisplayName("Checking page title")
     @Severity(SeverityLevel.MINOR)
@@ -36,6 +37,7 @@ public class UITests extends UITestsBase {
     }
 
     @Test
+    @AllureId("6708")
     @Feature("Search")
     @DisplayName("Products search from the catalog")
     @Severity(SeverityLevel.NORMAL)
@@ -51,6 +53,7 @@ public class UITests extends UITestsBase {
     }
 
     @Test
+    @AllureId("6707")
     @Feature("Search")
     @DisplayName("Search for the not existing in the catalog products")
     @Severity(SeverityLevel.NORMAL)
@@ -67,6 +70,7 @@ public class UITests extends UITestsBase {
     }
 
     @Test
+    @AllureId("6710")
     @Feature("Shopping cart")
     @DisplayName("Adding a product to the shopping cart")
     @Severity(SeverityLevel.CRITICAL)
@@ -83,6 +87,7 @@ public class UITests extends UITestsBase {
     }
 
     @Test
+    @AllureId("6709")
     @Feature("Shopping cart")
     @DisplayName("Removing a product from the shopping cart [via API and UI]")
     @Severity(SeverityLevel.CRITICAL)
