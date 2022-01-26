@@ -9,6 +9,8 @@ import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import parenkov.helpers.Layer;
+import parenkov.helpers.Microservice;
 
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
@@ -16,12 +18,14 @@ import static org.hamcrest.Matchers.is;
 import static parenkov.tests.Specs.baseRequest;
 
 @Tag("API")
+@Layer("API")
 @Epic("Demo Web Shop")
-@Owner("Fedor Parenkov")
 public class APITests extends APITestsBase {
 
     @Test
     @AllureId("6712")
+    @Owner("Fed Parenkov")
+    @Microservice("Register")
     @Feature("Registration")
     @DisplayName("User registration")
     @Severity(SeverityLevel.CRITICAL)
@@ -40,6 +44,8 @@ public class APITests extends APITestsBase {
 
     @Test
     @AllureId("6714")
+    @Owner("Alex Examplov")
+    @Microservice("Shopping Cart")
     @Feature("Shopping Cart")
     @DisplayName("Adding an item to the Shopping Cart")
     @Severity(SeverityLevel.CRITICAL)
@@ -63,6 +69,8 @@ public class APITests extends APITestsBase {
 
     @Test
     @AllureId("6713")
+    @Owner("Fed Parenkov")
+    @Microservice("Contact Us")
     @Feature("Feedback")
     @DisplayName("Sending feedback by 'Contact Us'")
     @Severity(SeverityLevel.MINOR)

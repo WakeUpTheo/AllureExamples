@@ -10,6 +10,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Cookie;
+import parenkov.helpers.Layer;
+import parenkov.helpers.Microservice;
 
 import static com.codeborne.selenide.Condition.empty;
 import static com.codeborne.selenide.Condition.text;
@@ -22,12 +24,14 @@ import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Tag("UI")
+@Layer("UI")
 @Epic("Demo Web Shop")
-@Owner("Fedor Parenkov")
 public class UITests extends UITestsBase {
 
     @Test
     @AllureId("6711")
+    @Owner("Alex Examplov")
+    @Microservice("Header")
     @Feature("Main page")
     @DisplayName("Checking page title")
     @Severity(SeverityLevel.MINOR)
@@ -43,6 +47,8 @@ public class UITests extends UITestsBase {
 
     @Test
     @AllureId("6708")
+    @Owner("Fed Parenkov")
+    @Microservice("Header")
     @Feature("Search")
     @DisplayName("Products search from the catalog")
     @Severity(SeverityLevel.NORMAL)
@@ -59,6 +65,8 @@ public class UITests extends UITestsBase {
 
     @Test
     @AllureId("6707")
+    @Owner("Alex Examplov")
+    @Microservice("Header")
     @Feature("Search")
     @DisplayName("Search for the not existing in the catalog products")
     @Severity(SeverityLevel.NORMAL)
@@ -76,6 +84,8 @@ public class UITests extends UITestsBase {
 
     @Test
     @AllureId("6710")
+    @Owner("Fed Parenkov")
+    @Microservice("Shopping cart")
     @Feature("Shopping cart")
     @DisplayName("Adding a product to the shopping cart")
     @Severity(SeverityLevel.CRITICAL)
@@ -93,6 +103,8 @@ public class UITests extends UITestsBase {
 
     @Test
     @AllureId("6709")
+    @Owner("Fed Parenkov")
+    @Microservice("Shopping cart")
     @Feature("Shopping cart")
     @DisplayName("Removing a product from the shopping cart [via API and UI]")
     @Severity(SeverityLevel.CRITICAL)
