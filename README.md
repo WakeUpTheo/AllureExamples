@@ -31,7 +31,7 @@
 Для отображения метрик создаются различные dashboards.<br/><br/>
 **Примеры**<br/>
 Успешность и время выполнения тестов:<br/><br/>
-![](./images/passing_manual_test.png)
+![](./images/auto_metrics.png)
 
 Статистика по запускам в разных environments:<br/><br/>
 ![](./images/stages_metrics.png)
