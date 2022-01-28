@@ -3,7 +3,7 @@
 
 
 ### Технологический стек
-<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" /> <img src="https://img.shields.io/badge/Selenide-b400b4?style=for-the-badge&logo=selenide&logoColor=white" /> <img src="https://img.shields.io/badge/Junit5-25A162?style=for-the-badge&logo=junit5&logoColor=white" /> <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" /> <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" /><br/>
+[<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />](https://www.java.com/) <img src="https://img.shields.io/badge/Selenide-b400b4?style=for-the-badge&logo=selenide&logoColor=white" /> <img src="https://img.shields.io/badge/Junit5-25A162?style=for-the-badge&logo=junit5&logoColor=white" /> <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white" /> <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" /><br/>
 <img src="https://img.shields.io/badge/Selenoid-0080c1?style=for-the-badge&logo=selenoid&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-24b2e4?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Allure TestOps-4ddf82?style=for-the-badge&logo=Allure TestOps&logoColor=white" /> <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=Jira&logoColor=white" /> 
 
 
